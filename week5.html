@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Toggle</title>
+</head>
+
+<body>
+
+    <h2>Password Box</h2>
+
+    <input type="password" id="passwordBox" placeholder="Enter password">
+
+    <script>
+        const passwordBox = document.getElementById("passwordBox");
+
+        passwordBox.addEventListener("click", function () {
+
+            if (passwordBox.type === "password") {
+                passwordBox.type = "text";
+                passwordBox.style.backgroundColor = "lightgreen";
+            } else {
+                passwordBox.type = "password";
+                passwordBox.style.backgroundColor = "lightpink";
+            }
+
+        });
+    </script>
+
+</body>
+</html>
